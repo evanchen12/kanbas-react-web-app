@@ -60,14 +60,15 @@
 }
 
 button {
-  border-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
   padding-left: 10px;
   padding-right: 10px;
   height: 30px;
 }
 
 .wd-buttons select {
-  border-style: none;
   background-color: #f0f0f0;
   padding-left: 10px;
   height: 30px;
@@ -79,7 +80,12 @@ button {
   top: 2px;
 }
 
-.status-block > div{
+.status-block {
+  width: 250px; 
+  margin-top: 30px;
+}
+
+.status-block > div {
   margin-bottom: 50px;
 }
 
@@ -98,40 +104,33 @@ button {
 }
 
 .publish-buttons button{
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.wd-calender {
+.wd-calender li {
   border-radius: 0%;
   border: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 .wd-calender > li > i {
   padding-right: 5px;
 }
 
-.wd-top-r {
-  margin-left: 24px;
-  margin-right: 24px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+.wd-navigation-kai {
+  width: 100%;
 }
 
-.red-bg {
-  background-color: red;
-  color: white;
+.wd-navigation-kai li {
+  text-align: left;
 }
 
-.green-bg {
-  background-color: green;
-  color: white;
-}
-
-.red-text {
+.wd-navigation-kai a {
   color: red;
+}
+
+.wd-account-kai a i {
+  color: gray;
 }
 
 a {
