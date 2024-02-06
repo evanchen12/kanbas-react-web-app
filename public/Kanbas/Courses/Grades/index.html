@@ -1,0 +1,69 @@
+<html>
+  <head></head>
+  <body>
+    <select id="select-one">
+      <option value="Gradebook">Gradebook</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="button">Import</button>
+    <select id="select-one">
+      <option value="Export">Export</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="Configure">Configure</button>
+ 
+    <form>
+      <h2>Student Names</h2>
+      <input type="text-fields" name="Student" placeholder="Search Students"/> 
+
+      <h2>Assignment Names</h2>
+      <input type="text-fields" name="Assignment" placeholder="Search Assignments"/> 
+    </form>
+
+    <button type="button">Apply Filters</button>
+    <br />
+    <br />
+
+    <table border="1" width="100%">
+      <thead>
+        <tr align="center">
+          <th>Student Name</td>
+          <th>A1 SETUP <br /> Out of 100</th>
+          <th>A2 HTML <br /> Out of 100</th>
+          <th>A3 CSS <br /> Out of 100</th>
+          <th>A4 BOOTSTRAP <br /> Out of 100</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td align="left">Alice Wonderland</td>
+          <td>98</td>
+          <td><input type="number" size="2" min="0" max="100" value="89" style="text-align:center;"/></td>
+          <td>87</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td align="left">Princess Leia</td>
+          <td>98</td>
+          <td>80</td>
+          <td>87</td>
+          <td><input type="number" size="2" min="0" max="100" value="86" style="text-align:center;"/></td>
+        </tr>
+        <tr>
+          <td align="left">Luke Skywalker</td>
+          <td><input type="number" size="2" min="0" max="100" value="99" style="text-align:center;"/></td>
+          <td>88</td>
+          <td><input type="number" size="2" min="0" max="100" value="79" style="text-align:center;"/></td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td align="left">Han Solo</td>
+          <td>85</td>
+          <td><input type="number" size="2" min="0" max="100" value="86" style="text-align:center;"/></td>
+          <td>80</td>
+          <td>84</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
