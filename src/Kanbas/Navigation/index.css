@@ -1,0 +1,57 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;  margin: 0px;
+  width: 85px;
+  height: 100%;
+}
+.wd-kanbas-navigation li {
+  padding: 10px;     margin-bottom: 10px;
+  font-size: 0.8em;  text-align: center;
+}
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+.wd-kanbas-navigation a svg {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation li.wd-account svg {
+  color: lightgray;
+}
+
+.wd-kanbas-navigation-h {
+  list-style: none;
+  padding: 0px;  margin: 0px;
+  width: 250px;
+  height: 100%;
+}
+
+.wd-kanbas-navigation-h li {
+  padding: 10px;     margin-bottom: 5px;
+  font-size: 1em;  text-align: left;
+}
+.wd-kanbas-navigation-h a {
+  color: red;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.wd-kanbas-navigation-h a svg {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation-h li.wd-account-h svg {
+  color: lightgray;
+}
