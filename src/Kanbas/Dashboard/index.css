@@ -1,0 +1,27 @@
+.col {
+  width: 270px;
+}
+ 
+.card a {
+  text-decoration: none; 
+}
+
+.card .card-title{
+  color: navy; 
+  font-weight: bold;
+}
+
+.card .card-text{
+  color: black; 
+}
+
+.ellipsis {
+  max-width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ .fontsize {
+  font-size: small;
+ }

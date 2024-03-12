@@ -1,0 +1,26 @@
+.wd-buttons {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.wd-buttons button {
+  margin-left: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+}
+
+.wd-buttons select {
+  margin-left: 5px;
+  background-color: #f0f0f0;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.wd-main-body {
+  padding-left: 48px;
+  padding-right: 48px;
+}
