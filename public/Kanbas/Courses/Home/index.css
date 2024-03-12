@@ -1,0 +1,140 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+  margin-top: 40px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.wd-modules > li > ul > ul > li {
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.main-body {
+  padding-left: 48px; 
+  padding-right: 48px;
+}
+
+.empty {
+  padding-right: 35px;
+}
+
+.wd-modules > li > ul > ul > li > i > i {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wd-buttons {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+}
+
+.wd-buttons select {
+  background-color: #f0f0f0;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.button-size {
+  font-size: 25px;
+  position: relative;
+  top: 2px;
+}
+
+.status-block {
+  width: 250px; 
+  margin-top: 30px;
+}
+
+.status-block > div {
+  margin-bottom: 50px;
+}
+
+
+.wd-button-list {
+  margin-top: 20px;
+}
+
+.wd-button-list button {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.wd-button-list button a {
+  color: black;
+}
+
+.publish-buttons button{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wd-calender li {
+  border-radius: 0%;
+  border: none;
+}
+
+.wd-calender > li > i {
+  padding-right: 5px;
+}
+
+.wd-navigation-kai {
+  width: 100%;
+}
+
+.wd-navigation-kai li {
+  text-align: left;
+}
+
+.wd-navigation-kai a {
+  color: red;
+}
+
+.wd-account-kai a i {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
