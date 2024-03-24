@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { Course } from "../DataType";
@@ -50,7 +49,7 @@ function Dashboard({courses, course, setCourse, addNewCourse,
                 </div>
               </div>
             </div>
-          ))}
+          ))}    
           <div className="col" style={{ width: 300 }}>
             <div className="card">
               <div className="card-body function-card">
