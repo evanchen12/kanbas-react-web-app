@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router";
 import "./index.css";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
-import { useParams } from "react-router";
-import { addModule, deleteModule, updateModule, setModule } from "./modulesReducer";
-import { KanbasState } from "../../Store";
 import { Lesson } from "../../DataType";
+import { deleteModule, updateModule, setModule, setModules } from "./modulesReducer";
+import { KanbasState } from "../../Store";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -15,6 +16,22 @@ function ModuleList() {
     state.modulesReducer.module);
   const dispatch = useDispatch();
   const [selectedModule, setSelectedModule] = useState(moduleList[0]);
+  
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+  const handleDeleteModule = (moduleId: string) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
   return (
     <>
@@ -48,9 +65,9 @@ function ModuleList() {
                     <FaPlusCircle className="ms-2" />
                   </button>
                   <ul className="dropdown-menu">
-                    <li><button className="dropdown-item" type="button" onClick={() => dispatch(setModule(module))}>
+                    <li><button className="dropdown-item" type="button" onClick={handleUpdateModule}>
                       Edit</button></li>
-                    <li><button className="dropdown-item" type="button" onClick={() => dispatch(deleteModule(module._id))}>
+                    <li><button className="dropdown-item" type="button" onClick={() => handleDeleteModule(module._id)}>
                       Delete</button></li>
                   </ul>
                 </div>

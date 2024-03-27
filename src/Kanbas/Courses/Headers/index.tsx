@@ -1,20 +1,31 @@
 import { useParams, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
 import '../../../libs/bootstrap/bootstrap.min.css';
 import { HeaderCourseNavigation } from "../Navigation";
 import { HeaderKanbasNavigation } from "../../Navigation";
 import "./index.css"
-import { Course } from "../../DataType";
 
-
-function Headers({ courses }: { courses: Course[] }) {
-  const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+function Headers() {
+  const COURSES_API = "http://localhost:4000/api/courses";
   const location = useLocation();
   const pathArray = location.pathname.split('/'); 
   const currentPage = pathArray[pathArray.length - 1]; 
   const currentPageClean = currentPage.replace(/[^A-Za-z]+/g, ' ');
+  
+  const { courseId } = useParams();
+  const [course, setCourse] = useState<any>({ _id: "" });
+  const findCourseById = async (courseId?: string) => {
+    const response = await axios.get(
+      `${COURSES_API}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
 
   return (
     <>

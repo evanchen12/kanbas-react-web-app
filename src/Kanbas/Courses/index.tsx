@@ -5,12 +5,12 @@ import { CourseNavigation } from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-import { Course } from "../DataType";
 
-function Courses({ courses }: {courses: Course[]}) {
+function Courses() {
+
   return (
     <div className="flex-grow-1">
-      <Headers courses={courses}/>
+      <Headers/>
 
       <div className="d-flex">
         <div className="d-none d-md-block">
