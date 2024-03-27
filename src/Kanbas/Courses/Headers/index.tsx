@@ -7,9 +7,10 @@ import '../../../libs/bootstrap/bootstrap.min.css';
 import { HeaderCourseNavigation } from "../Navigation";
 import { HeaderKanbasNavigation } from "../../Navigation";
 import "./index.css"
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 function Headers() {
-  const COURSES_API = "http://localhost:4000/api/courses";
+  const COURSES_API = `${API_BASE}/api/courses`;
   const location = useLocation();
   const pathArray = location.pathname.split('/'); 
   const currentPage = pathArray[pathArray.length - 1]; 
